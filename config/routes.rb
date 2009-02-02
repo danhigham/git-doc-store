@@ -35,6 +35,9 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
+  map.connect 'store/:path', :controller => 'store', :action => 'index'
+  map.connect 'blob/:id', :controller => 'store', :action => 'show_blob'
+
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing the them or commenting them out if you're using named routes and resources.
