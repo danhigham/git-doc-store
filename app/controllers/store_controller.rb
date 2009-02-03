@@ -28,18 +28,12 @@ class StoreController < ApplicationController
 
       filename = "#{path}/#{filename}" unless path.empty?
 
-      #File.open("tmp/#{filename}", 'w') { |f| f.write('hellor ' + filename) }
-
       index = @@repo.index
 
-#     @@repo.add("tmp/#{filename}")      
-#     @@repo.commit_index('blah!')
-
+      index.read_tree("master")
       index.add(filename, file)
       index.commit('blah!')
-      #@@repo.commit_index('blah!')
-      
-      #render :text => filename
+
       redirect_to "/store/#{path}"      
     end
   end

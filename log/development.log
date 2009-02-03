@@ -16674,3 +16674,141 @@ Rendering template within layouts/application
 Rendering store/index
 Rendered store/_toolbar (0.00015)
 Completed in 0.01132 (88 reqs/sec) | Rendering: 0.00396 (35%) | DB: 0.00000 (0%) | 200 OK [http://192.168.6.129/store/tmp/]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-02-03 22:37:21) [GET]
+  Session ID: b8d5abff0a4808e42c57a1880cab7362
+  Parameters: {"action"=>"index", "path"=>[], "controller"=>"store"}
+Rendering template within layouts/application
+Rendering store/index
+Rendered store/_toolbar (0.00011)
+Completed in 0.07725 (12 reqs/sec) | Rendering: 0.00672 (8%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/store]
+
+
+Processing StoreController#upload (for 127.0.0.1 at 2009-02-03 22:37:25) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"action"=>"upload", "path"=>[], "controller"=>"store"}
+Rendering store/upload
+Completed in 0.00648 (154 reqs/sec) | Rendering: 0.00354 (54%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/upload/]
+
+
+Processing StoreController#upload (for 127.0.0.1 at 2009-02-03 22:37:37) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"ac756d5e78ed43c53ef9e4de2bd5b9094d5c51e6", "action"=>"upload", "path"=>[], "file"=>#<File:/tmp/CGI20090203-18330-mp9xa6-0>, "controller"=>"store"}
+Redirected to http://127.0.0.1:3000/store/
+Completed in 0.09576 (10 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/upload]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-02-03 22:37:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"index", "path"=>[], "controller"=>"store"}
+Rendering template within layouts/application
+Rendering store/index
+Rendered store/_toolbar (0.00009)
+Completed in 0.00424 (236 reqs/sec) | Rendering: 0.00176 (41%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/store/]
+
+
+Processing StoreController#show_blob (for 127.0.0.1 at 2009-02-03 22:37:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"show_blob", "id"=>"d38be8e45a4251b1d1c58cc433c5eedea624a0f5", "type"=>"JPEG", "controller"=>"store"}
+Completed in 0.00933 (107 reqs/sec) | Rendering: 0.00074 (7%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/blob/d38be8e45a4251b1d1c58cc433c5eedea624a0f5?type=JPEG]
+
+
+Processing StoreController#upload (for 127.0.0.1 at 2009-02-03 22:38:43) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"upload", "path"=>[], "controller"=>"store"}
+Rendering store/upload
+Completed in 0.00337 (296 reqs/sec) | Rendering: 0.00151 (44%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/upload/]
+
+
+Processing StoreController#upload (for 127.0.0.1 at 2009-02-03 22:38:53) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"ac756d5e78ed43c53ef9e4de2bd5b9094d5c51e6", "action"=>"upload", "path"=>[], "file"=>#<File:/tmp/CGI20090203-18330-13xkvir-0>, "controller"=>"store"}
+Redirected to http://127.0.0.1:3000/store/
+Completed in 0.10189 (9 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/upload]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-02-03 22:38:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"index", "path"=>[], "controller"=>"store"}
+Rendering template within layouts/application
+Rendering store/index
+Rendered store/_toolbar (0.00025)
+Completed in 0.01117 (89 reqs/sec) | Rendering: 0.00451 (40%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/store/]
+
+
+Processing StoreController#show_blob (for 127.0.0.1 at 2009-02-03 22:38:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"show_blob", "id"=>"22a15a31b94014645d70fd316141d1ddd53ca495", "type"=>"PNG", "controller"=>"store"}
+Completed in 0.00441 (226 reqs/sec) | Rendering: 0.00028 (6%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/blob/22a15a31b94014645d70fd316141d1ddd53ca495?type=PNG]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-02-03 22:50:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"index", "path"=>[], "controller"=>"store"}
+Rendering template within layouts/application
+Rendering store/index
+Rendered store/_toolbar (0.00023)
+Completed in 0.01111 (89 reqs/sec) | Rendering: 0.00448 (40%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/store/]
+
+
+Processing StoreController#upload (for 127.0.0.1 at 2009-02-03 22:50:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"upload", "path"=>[], "controller"=>"store"}
+Rendering store/upload
+Completed in 0.00356 (280 reqs/sec) | Rendering: 0.00169 (47%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/upload/]
+
+
+Processing StoreController#upload (for 127.0.0.1 at 2009-02-03 22:50:37) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"commit"=>"Upload", "authenticity_token"=>"ac756d5e78ed43c53ef9e4de2bd5b9094d5c51e6", "action"=>"upload", "path"=>[], "file"=>#<File:/tmp/CGI20090203-18330-1t4c27m-0>, "controller"=>"store"}
+Redirected to http://127.0.0.1:3000/store/
+Completed in 0.07742 (12 reqs/sec) | DB: 0.00000 (0%) | 302 Found [http://127.0.0.1/upload]
+
+
+Processing StoreController#index (for 127.0.0.1 at 2009-02-03 22:50:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"index", "path"=>[], "controller"=>"store"}
+Rendering template within layouts/application
+Rendering store/index
+Rendered store/_toolbar (0.00009)
+Completed in 0.00686 (145 reqs/sec) | Rendering: 0.00177 (25%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/store/]
+
+
+Processing StoreController#show_blob (for 127.0.0.1 at 2009-02-03 22:50:42) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"show_blob", "id"=>"d38be8e45a4251b1d1c58cc433c5eedea624a0f5", "type"=>"JPEG", "controller"=>"store"}
+Completed in 0.00907 (110 reqs/sec) | Rendering: 0.00074 (8%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/blob/d38be8e45a4251b1d1c58cc433c5eedea624a0f5?type=JPEG]
+
+
+Processing StoreController#show_blob (for 127.0.0.1 at 2009-02-03 22:50:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlZjZiOTUxNGNmNDI4M2NmYWNkNWExOTVkMDM2YzI3
+YmIiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--90b4d084462a5dfcd004e11da399c0c9ee7ef9d4
+  Parameters: {"action"=>"show_blob", "id"=>"22a15a31b94014645d70fd316141d1ddd53ca495", "type"=>"PNG", "controller"=>"store"}
+Completed in 0.00447 (223 reqs/sec) | Rendering: 0.00030 (6%) | DB: 0.00000 (0%) | 200 OK [http://127.0.0.1/blob/22a15a31b94014645d70fd316141d1ddd53ca495?type=PNG]
