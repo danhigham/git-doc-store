@@ -1,7 +1,7 @@
 # Filters added to this controller apply to all controllers in the application.
 # Likewise, all the methods added will be available for all controllers.
-require "git_store"
-require 'grit'
+#require "git_store"
+require '/home/danhigham/Projects/git-doc-store/lib/grit'
 include Grit
 
 class ApplicationController < ActionController::Base
@@ -17,4 +17,5 @@ class ApplicationController < ActionController::Base
   # filter_parameter_logging :password
 
   @@repo = Repo.new("/home/danhigham/Projects/doc-repo")
+  #@@store = GitStore.new("/home/danhigham/Projects/doc-repo")
 end

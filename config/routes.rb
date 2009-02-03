@@ -35,8 +35,9 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
-  map.connect 'store/:path', :controller => 'store', :action => 'index'
+  map.connect 'store/*path', :controller => 'store', :action => 'index'
   map.connect 'blob/:id', :controller => 'store', :action => 'show_blob'
+  map.connect 'upload/*path', :controller => 'store', :action => 'upload'
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should

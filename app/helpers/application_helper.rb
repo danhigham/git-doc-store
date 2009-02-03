@@ -2,9 +2,9 @@
 module ApplicationHelper
 
   def link_for_git_object(obj)
-    if obj.class == Git::Tree
+    if obj.class == Grit::Tree
       return "<a href='/store#{params[:path]}/#{obj.name}/'>#{obj.name}</a>"
-    elsif obj.class == Git::Blob
+    elsif obj.class == Grit::Blob
       type = ContentType.find(obj.name.scan(/\.([A-Za-z]+$)/).to_s)
       return "<a href='/blob/#{obj.id}?type=#{type.to_s}'>#{obj.name}</a>"
     end  
@@ -24,6 +24,12 @@ module ApplicationHelper
     end
 
   end    
+
+  def modal_link(title, caption, url)
+      "<a class=\"\" onclick=\"this.blur(); 
+      Modalbox.show(this.href, {title: '#{title}', width: 600}); return false;\" 
+      title=\"#{url}\" href=\"#{url}\">#{caption}</a>"
+  end
 
 end
 
