@@ -1,16 +1,36 @@
 
-%p= "Upload to #{params[:path].join("/")}"
+%p= "Upload to #{params[:repo]}:#{@upload_path}"
 
-- form_tag '/upload', :multipart => true do
+- form_tag '/browser/upload', :multipart => true do
   
   = hidden_field_tag "path", params[:path].join("/")
-  .text-field
-    %label{:for=>"file"} File to Upload     
-    = file_field_tag "file"
+  = hidden_field_tag "repo", params[:repo]
+  
+  %div{:class => 'text-field required'}
+    %label{:for=>"file"} 
+      File to Upload    
+      %strong
+        %sup *
+      %span.help The file you wish to upload
+    .input    
+      = file_field_tag "file", {:class => 'file-field'}
 
-  .text-field
-    %label{:for=>"comment"} Comments
-    = text_area_tag "comment"
+  %div{:class => 'text-field required'}
+    %label{:for=>"comment"} 
+      Comments
+      %strong
+        %sup *
+      %span.help Comment for the git "Commit"
+    .input 
+      = text_area_tag "comment"
+
+  %div{:class => 'check-box-field'}
+    %label{:for=>"comment"} 
+      Archive?
+      %span.help Is this an archive?, check to unpack...
+    .input
+      = check_box_tag "archive"
+    
 
   .submit-field
     .input

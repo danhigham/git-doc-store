@@ -1,8 +1,12 @@
 %ul
-
+  -if !@current_path.nil?
+    %li
+      =modal_link("Upload a file...", "Upload", "/upload/#{params[:repo]}/#{@path.join("/")}")
+    %li Create folder
+      
+    -@path.each do |x|
+      %li= x  
+      
+%ul
   %li
-    =modal_link("Upload a file...", "Upload", "/upload/#{@path.join("/")}")
-  %li Create folder
-
-  -@path.each do |x|
-    %li= x  
+    %a{:href => '/admin/repository'}= Admin
