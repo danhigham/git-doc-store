@@ -1,0 +1,20 @@
+
+%p= "Upload to #{params[:path].join("/")}"
+
+- form_tag '/upload', :multipart => true do
+  
+  = hidden_field_tag "path", params[:path].join("/")
+  .text-field
+    %label{:for=>"file"} File to Upload     
+    = file_field_tag "file"
+
+  .text-field
+    %label{:for=>"comment"} Comments
+    = text_area_tag "comment"
+
+  .submit-field
+    .input
+      = submit_tag 'Upload'
+
+
+

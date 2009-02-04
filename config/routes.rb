@@ -31,13 +31,13 @@ ActionController::Routing::Routes.draw do |map|
   #   end
 
   # You can have the root of your site routed with map.root -- just remember to delete public/index.html.
-  # map.root :controller => "welcome"
+  map.redirect '', :controller => "browser"
 
   # See how all your routes lay out with "rake routes"
 
-  map.connect 'store/*path', :controller => 'store', :action => 'index'
-  map.connect 'blob/:id', :controller => 'store', :action => 'show_blob'
-  map.connect 'upload/*path', :controller => 'store', :action => 'upload'
+  map.connect 'browse/*path', :controller => 'browser', :action => 'index'
+  map.connect 'blob/:id', :controller => 'browser', :action => 'show_blob'
+  map.connect 'upload/*path', :controller => 'browser', :action => 'upload'
 
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should

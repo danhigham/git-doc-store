@@ -1,0 +1,5 @@
+-form_for :repository, :url => { :action => 'add' } do |f|
+  =f.text_field :name, :required => true, :help => "The name of the repository"
+  =f.text_field :path, :required => true, :help => "The path to the .git folder"
+  =f.submit("Register")
+

@@ -1,0 +1,14 @@
+%table#admin-repo-list
+  %tr
+    %td Name
+    %td Path
+    %td Created @
+    %td Unregister
+  -@repos.each do |r|
+    %tr
+      %td= r.name
+      %td= r.path
+      %td= r.created_at
+      %td= modal_link("Unregister repository", "x" , "/admin/repository/unregister")
+
+=modal_link("Register repository", "Register repository" , "/admin/repository/register")
