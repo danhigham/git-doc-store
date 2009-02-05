@@ -1,9 +1,0 @@
-%ul
-  -params[:path].each do |x|
-    %li= x
-
-  %li
-    =modal_link("Upload a file...", "Upload", "/upload/#{params[:path].join("/")}")
-  %li Create folder
-
-  
