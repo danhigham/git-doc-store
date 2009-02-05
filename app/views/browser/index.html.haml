@@ -2,3 +2,5 @@
   -@current_path.contents.each do |x|
     %li
       =link_for_git_object(x)
+
+=@commits.collect { |x| x.to_hash.inspect }.join("<br />")

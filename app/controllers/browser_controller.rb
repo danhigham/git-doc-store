@@ -14,6 +14,7 @@ class BrowserController < ApplicationController
       @path = params[:path] || []
       selected_path = @path.join("/")
       
+      @commits = git_repo.commits
       @current_path = tree/"#{selected_path}" || tree
     else
       @repo_list = Repository.all
@@ -22,7 +23,10 @@ class BrowserController < ApplicationController
   end
 
   def show_blob
-    blob = @@repo.blob(params[:id])
+    repo = Repository.find_by_name(params[:repo])
+    git_repo = Grit::Repo.new(repo.path) 
+    blob = git_repo.blob(params[:id])
+    
     content_type = params[:type].to_sym
 
     set_response_type(content_type)
@@ -46,6 +50,7 @@ class BrowserController < ApplicationController
 
       index.read_tree("master")
       index.add(filename, file)
+
       index.commit(params[:comment])
 
       redirect_to "/browse/#{repo.name}/#{path}"      
