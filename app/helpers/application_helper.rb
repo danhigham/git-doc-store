@@ -2,8 +2,11 @@
 module ApplicationHelper
 
   def link_for_git_object(obj)
+
     if obj.class == Grit::Tree
-      return "<a href='/browse/#{params[:repo]}#{params[:path]}/#{obj.name}/'>#{obj.name}</a>"
+      path = params[:path].join("/")
+      path = "/#{path}" if params[:path].length > 0
+      return "<a href='/browse/#{params[:repo]}#{path}/#{obj.name}/'>#{obj.name}</a>"
     elsif obj.class == Grit::Blob
       type = ContentType.find(obj.name.scan(/\.([A-Za-z]+$)/).to_s)
       return "<a href='/blob/#{params[:repo]}/#{obj.id}?type=#{type.to_s}'>#{obj.name}</a>"

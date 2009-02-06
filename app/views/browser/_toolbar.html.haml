@@ -1,12 +1,21 @@
-%ul
-  -if !@current_path.nil?
-    %li
-      =modal_link("Upload a file...", "Upload", "/upload/#{params[:repo]}/#{@path.join("/")}")
-    %li Create folder
-      
+#breadcrumbs.toolbar
+  -if !@path.nil?
     -@path.each do |x|
-      %li= x  
+      %div{:class => get_list_item_class(@path, x)}
+        .shadow-effect  
+        .text= x  
+
+#action-buttons.toolbar
+  -if !@current_path.nil?
+    %div{:class => "button first"}
+      .shadow-effect
+      .text= modal_link("Upload a file...", "Upload", "/upload/#{params[:repo]}/#{@path.join("/")}")
+    %div{:class => "button last"} 
+      .shadow-effect
+      .text Create folder
       
-%ul
-  %li
-    %a{:href => '/admin/repository'}= Admin
+#tools.toolbar
+  %div{:class => "button first"}
+    .shadow-effect
+    .text
+      %a{:href => '/admin/repository'}= Admin

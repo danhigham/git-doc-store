@@ -1,0 +1,4 @@
+-form_for :repository, :url => {:action => 'remove', :id => @repo.id} do |f|
+  %pre= "Are you sure you wish to remove \"#{@repo.name}\"?"
+  =f.submit("Remove")
+
