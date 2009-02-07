@@ -10,6 +10,16 @@ h1#page-header {
   height: 50px;
   padding: 15px 0 5px 0; }
 
+h2 {
+  font-size: 1.1em; }
+
+h3 {
+  font-size: 0.9em;
+  font-weight: bold; }
+
+#main-content-container {
+  margin: 10px 0 0 10px; }
+
 #toolbar-container {
   padding: 3px 0 1.3em 0;
   background: #e8e8e8; }
@@ -37,13 +47,24 @@ h1#page-header {
       position: relative;
       padding-left: 3px;
       font-family: arial;
-      font-size: 0.8em; }
+      font-size: 0.8em;
+      font-weight: bold; }
       .toolbar .button .text a {
         text-decoration: none;
         color: #000000;
         font-family: arial; }
       .toolbar .button .text a:hover {
-        text-decoration: underline; }
+        color: 505050; }
+  .toolbar .selected {
+    background: #F9F9F9 none repeat scroll 0 0; }
+    .toolbar .selected .shadow-effect {
+      background: #E3E3E3 none repeat scroll 0 0;
+      border-bottom: 0.2em solid #EEEEEE; }
+    .toolbar .selected .text {
+      font-weight: bold;
+      color: 505050; }
+      .toolbar .selected .text a {
+        color: 505050; }
   .toolbar .first {
     border-left: none; }
     .toolbar .first .text {
@@ -64,3 +85,10 @@ h1#page-header {
 #breadcrumbs {
   float: left;
   margin-right: 10px; }
+
+table#tree {
+  width: 100%; }
+  table#tree th {
+    text-align: left; }
+  table#tree tr.odd {
+    background-color: #ececec; }

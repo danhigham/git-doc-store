@@ -1,6 +1,11 @@
-%ul#tree
-  -@current_path.contents.each do |x|
-    %li
-      =link_for_git_object(x)
+%h3= "Displaying items for #{params[:repo]}:#{@selected_path}"
 
+%table#tree
+  %tr
+    %th
+      Name
+  -@current_path.contents.each do |x|
+    %tr{:class => cycle('odd','even')} 
+      %td    
+        =link_for_git_object(x)
 

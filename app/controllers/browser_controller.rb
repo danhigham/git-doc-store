@@ -11,10 +11,10 @@ class BrowserController < ApplicationController
       git_repo = Grit::Repo.new(repo.path)
       tree = git_repo.tree
       @path = params[:path] || []
-      selected_path = @path.join("\/")
+      @selected_path = @path.join("\/")
       
       @commits = git_repo.commits
-      @current_path = tree/"#{selected_path}" || tree
+      @current_path = tree/"#{@selected_path}" || tree
     else
       @repo_list = Repository.all
       render :action => 'repo_list'

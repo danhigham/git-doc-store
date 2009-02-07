@@ -31775,3 +31775,735 @@ c2h7AAY6CkB1c2VkewA=--3bc5a754ace008fd5ef5d0d830ba42403064bd82
   Parameters: {"repo"=>"git-doc-store", "action"=>"upload", "controller"=>"browser", "path"=>["app", "controllers", "admin"]}
 Rendering browser/upload
 Completed in 0.01354 (73 reqs/sec) | Rendering: 0.00345 (25%) | DB: 0.00000 (0%) | 200 OK [http://192.168.6.129/upload/git-doc-store/app/controllers/admin]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-06 22:59:53) [GET]
+  Session ID: 125ea08c52f186bb294be5cc05fb42ea
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000772)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00005)
+Completed in 0.10291 (9 reqs/sec) | Rendering: 0.09590 (93%) | DB: 0.00077 (0%) | 200 OK [http://localhost/]
+
+
+Processing Admin::RepositoryController#index (for 127.0.0.1 at 2009-02-06 23:00:08) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"action"=>"index", "controller"=>"admin/repository"}
+  [4;35;1mRepository Load (0.000590)[0m   [0mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering admin/repository/index
+Rendered admin/repository/_toolbar (0.00004)
+Completed in 0.02878 (34 reqs/sec) | Rendering: 0.02235 (77%) | DB: 0.00059 (2%) | 200 OK [http://localhost/admin/repository]
+
+
+Processing Admin::RepositoryController#delete (for 127.0.0.1 at 2009-02-06 23:00:17) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"action"=>"delete", "id"=>"test", "controller"=>"admin/repository"}
+  [4;36;1mRepository Load (0.000330)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'test') LIMIT 1[0m
+Rendering admin/repository/delete
+Completed in 0.01289 (77 reqs/sec) | Rendering: 0.00456 (35%) | DB: 0.00033 (2%) | 200 OK [http://localhost/admin/repository/delete/test]
+
+
+Processing Admin::RepositoryController#remove (for 127.0.0.1 at 2009-02-06 23:00:18) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"commit"=>"Remove", "authenticity_token"=>"129600f0a9bfcc4ec3bb6734a6a7440e33857cc5", "action"=>"remove", "id"=>"15", "controller"=>"admin/repository"}
+  [4;35;1mRepository Load (0.000254)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."id" = 15) [0m
+  [4;36;1mRepository Destroy (0.000189)[0m   [0;1m DELETE FROM "repositories"
+ WHERE "id" = 15
+[0m
+Redirected to http://localhost:3000/admin/repository
+Completed in 0.02428 (41 reqs/sec) | DB: 0.00044 (1%) | 302 Found [http://localhost/admin/repository/remove/15]
+
+
+Processing Admin::RepositoryController#index (for 127.0.0.1 at 2009-02-06 23:00:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"action"=>"index", "controller"=>"admin/repository"}
+  [4;35;1mRepository Load (0.000444)[0m   [0mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering admin/repository/index
+Rendered admin/repository/_toolbar (0.00004)
+Completed in 0.00979 (102 reqs/sec) | Rendering: 0.00419 (42%) | DB: 0.00044 (4%) | 200 OK [http://localhost/admin/repository]
+
+
+Processing Admin::RepositoryController#register (for 127.0.0.1 at 2009-02-06 23:00:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"action"=>"register", "controller"=>"admin/repository"}
+Rendering admin/repository/register
+Completed in 0.01902 (52 reqs/sec) | Rendering: 0.01678 (88%) | DB: 0.00000 (0%) | 200 OK [http://localhost/admin/repository/register]
+
+
+Processing Admin::RepositoryController#add (for 127.0.0.1 at 2009-02-06 23:00:31) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"commit"=>"Register", "repository"=>{"name"=>"test", "path"=>"/tmp/test"}, "authenticity_token"=>"129600f0a9bfcc4ec3bb6734a6a7440e33857cc5", "action"=>"add", "controller"=>"admin/repository"}
+  [4;36;1mRepository Create (0.000844)[0m   [0;1mINSERT INTO "repositories" ("name", "created_at", "updated_at", "path") VALUES('test', '2009-02-06 23:00:31', '2009-02-06 23:00:31', '/tmp/test')[0m
+Redirected to http://localhost:3000/admin/repository
+Completed in 0.03525 (28 reqs/sec) | DB: 0.00084 (2%) | 302 Found [http://localhost/admin/repository/add]
+
+
+Processing Admin::RepositoryController#index (for 127.0.0.1 at 2009-02-06 23:00:31) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"action"=>"index", "controller"=>"admin/repository"}
+  [4;35;1mRepository Load (0.000559)[0m   [0mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering admin/repository/index
+Rendered admin/repository/_toolbar (0.00003)
+Completed in 0.01020 (98 reqs/sec) | Rendering: 0.00405 (39%) | DB: 0.00056 (5%) | 200 OK [http://localhost/admin/repository]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-06 23:00:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.001810)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00012)
+Completed in 0.02764 (36 reqs/sec) | Rendering: 0.01154 (41%) | DB: 0.00181 (6%) | 200 OK [http://localhost/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-06 23:00:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>[], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000267)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00012)
+Completed in 0.02139 (46 reqs/sec) | Rendering: 0.00385 (18%) | DB: 0.00027 (1%) | 200 OK [http://localhost/browse/git-doc-store]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-06 23:00:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.001044)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00018)
+Completed in 0.04345 (23 reqs/sec) | Rendering: 0.00322 (7%) | DB: 0.00104 (2%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-06 23:00:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "helpers"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000265)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00036)
+Completed in 0.02151 (46 reqs/sec) | Rendering: 0.00320 (14%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/helpers/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-06 23:00:50) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "helpers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000323)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00032)
+Completed in 0.02253 (44 reqs/sec) | Rendering: 0.00319 (14%) | DB: 0.00032 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/helpers/admin/]
+
+
+Processing BrowserController#upload (for 127.0.0.1 at 2009-02-06 23:00:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"repo"=>"git-doc-store", "action"=>"upload", "path"=>["app", "helpers", "admin"], "controller"=>"browser"}
+Rendering browser/upload
+Completed in 0.01948 (51 reqs/sec) | Rendering: 0.01764 (90%) | DB: 0.00000 (0%) | 200 OK [http://localhost/upload/git-doc-store/app/helpers/admin]
+
+
+Processing BrowserController#show_blob (for 127.0.0.1 at 2009-02-06 23:03:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"repo"=>"git-doc-store", "action"=>"show_blob", "id"=>"2af0fb1133d03dcedf1f2bbca9a9b04444ef84f0", "type"=>"TXT", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000316)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Completed in 0.01228 (81 reqs/sec) | Rendering: 0.00032 (2%) | DB: 0.00032 (2%) | 200 OK [http://localhost/blob/git-doc-store/2af0fb1133d03dcedf1f2bbca9a9b04444ef84f0?type=TXT]
+
+
+Processing Admin::RepositoryController#index (for 127.0.0.1 at 2009-02-06 23:03:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNTdhNjQ4ZTk1YTI5Y2QxODNjOGQ2OWE3OThiMGI4
+MGYiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--c90666b9cb5aa18ed8cc960b6c6b4302e67095ee
+  Parameters: {"action"=>"index", "controller"=>"admin/repository"}
+  [4;36;1mRepository Load (0.000736)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering admin/repository/index
+Rendered admin/repository/_toolbar (0.00004)
+Completed in 0.01112 (89 reqs/sec) | Rendering: 0.00434 (39%) | DB: 0.00074 (6%) | 200 OK [http://localhost/admin/repository]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:25:55) [GET]
+  Session ID: 445487e7378726d1df228dd75641ed95
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000748)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00005)
+Completed in 0.10420 (9 reqs/sec) | Rendering: 0.09784 (93%) | DB: 0.00075 (0%) | 200 OK [http://localhost/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:26:01) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"repo"=>"test", "action"=>"index", "path"=>[], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000243)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'test') LIMIT 1[0m
+
+
+Grit::NoSuchPathError (/tmp/test):
+    /lib/grit/repo.rb:36:in `initialize'
+    /app/controllers/browser_controller.rb:11:in `new'
+    /app/controllers/browser_controller.rb:11:in `index'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1166:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1166:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.6/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing Admin::RepositoryController#index (for 127.0.0.1 at 2009-02-07 21:26:05) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"action"=>"index", "controller"=>"admin/repository"}
+  [4;36;1mRepository Load (0.000574)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering admin/repository/index
+Rendered admin/repository/_toolbar (0.00003)
+Completed in 0.01650 (60 reqs/sec) | Rendering: 0.01027 (62%) | DB: 0.00057 (3%) | 200 OK [http://localhost/admin/repository]
+
+
+Processing Admin::RepositoryController#delete (for 127.0.0.1 at 2009-02-07 21:26:10) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"action"=>"delete", "id"=>"test", "controller"=>"admin/repository"}
+  [4;35;1mRepository Load (0.000267)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'test') LIMIT 1[0m
+Rendering admin/repository/delete
+Completed in 0.02201 (45 reqs/sec) | Rendering: 0.01489 (67%) | DB: 0.00027 (1%) | 200 OK [http://localhost/admin/repository/delete/test]
+
+
+Processing Admin::RepositoryController#remove (for 127.0.0.1 at 2009-02-07 21:26:12) [POST]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"commit"=>"Remove", "authenticity_token"=>"c31226d6e5e8159c4a997f6a9841052a1ff617a3", "action"=>"remove", "id"=>"17", "controller"=>"admin/repository"}
+  [4;36;1mRepository Load (0.000224)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."id" = 17) [0m
+  [4;35;1mRepository Destroy (0.012384)[0m   [0m DELETE FROM "repositories"
+ WHERE "id" = 17
+[0m
+Redirected to http://localhost:3000/admin/repository
+Completed in 0.03006 (33 reqs/sec) | DB: 0.01261 (41%) | 302 Found [http://localhost/admin/repository/remove/17]
+
+
+Processing Admin::RepositoryController#index (for 127.0.0.1 at 2009-02-07 21:26:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"action"=>"index", "controller"=>"admin/repository"}
+  [4;36;1mRepository Load (0.000522)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering admin/repository/index
+Rendered admin/repository/_toolbar (0.00003)
+Completed in 0.00918 (108 reqs/sec) | Rendering: 0.00367 (39%) | DB: 0.00052 (5%) | 200 OK [http://localhost/admin/repository]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:26:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.001218)[0m   [0mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00013)
+Completed in 0.02420 (41 reqs/sec) | Rendering: 0.00972 (40%) | DB: 0.00122 (5%) | 200 OK [http://localhost/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:26:19) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>[], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000262)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00010)
+Completed in 0.07353 (13 reqs/sec) | Rendering: 0.00357 (4%) | DB: 0.00026 (0%) | 200 OK [http://localhost/browse/git-doc-store]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:26:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000239)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00022)
+Completed in 0.01908 (52 reqs/sec) | Rendering: 0.00335 (17%) | DB: 0.00024 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:26:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000235)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00025)
+Completed in 0.02431 (41 reqs/sec) | Rendering: 0.00313 (12%) | DB: 0.00024 (0%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/]
+
+
+Processing BrowserController#show_blob (for 127.0.0.1 at 2009-02-07 21:26:30) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"show_blob", "id"=>"f6776a3519e5ef8882b978bb8e382cd4fc905215", "type"=>"TXT", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000266)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Completed in 0.01432 (69 reqs/sec) | Rendering: 0.00029 (2%) | DB: 0.00027 (1%) | 200 OK [http://localhost/blob/git-doc-store/f6776a3519e5ef8882b978bb8e382cd4fc905215?type=TXT]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:26:33) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000263)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00085)
+Completed in 0.03573 (27 reqs/sec) | Rendering: 0.00719 (20%) | DB: 0.00026 (0%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:37:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000330)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00034)
+Completed in 0.02864 (34 reqs/sec) | Rendering: 0.00715 (24%) | DB: 0.00033 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:38:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000260)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00030)
+Completed in 0.01994 (50 reqs/sec) | Rendering: 0.00259 (12%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:39:39) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000279)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00034)
+Completed in 0.02505 (39 reqs/sec) | Rendering: 0.00318 (12%) | DB: 0.00028 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:40:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000277)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00029)
+Completed in 0.02512 (39 reqs/sec) | Rendering: 0.00252 (10%) | DB: 0.00028 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:41:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000289)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00035)
+Completed in 0.02127 (47 reqs/sec) | Rendering: 0.00281 (13%) | DB: 0.00029 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:41:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000261)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00031)
+Completed in 0.02180 (45 reqs/sec) | Rendering: 0.00274 (12%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:42:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000269)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00033)
+Completed in 0.02732 (36 reqs/sec) | Rendering: 0.00284 (10%) | DB: 0.00027 (0%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:42:47) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000309)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00032)
+Completed in 0.08550 (11 reqs/sec) | Rendering: 0.00276 (3%) | DB: 0.00031 (0%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:42:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000807)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00031)
+Completed in 0.03500 (28 reqs/sec) | Rendering: 0.00312 (8%) | DB: 0.00081 (2%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:43:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000264)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00030)
+Completed in 0.02072 (48 reqs/sec) | Rendering: 0.00258 (12%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:44:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000260)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00033)
+Completed in 0.02201 (45 reqs/sec) | Rendering: 0.00294 (13%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:44:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000256)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00034)
+Completed in 0.02248 (44 reqs/sec) | Rendering: 0.00276 (12%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:46:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app", "controllers", "admin"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000285)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00030)
+Completed in 0.02355 (42 reqs/sec) | Rendering: 0.00385 (16%) | DB: 0.00029 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:46:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000712)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00021)
+Completed in 0.06278 (15 reqs/sec) | Rendering: 0.00327 (5%) | DB: 0.00071 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:47:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000277)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00018)
+Completed in 0.01951 (51 reqs/sec) | Rendering: 0.00309 (15%) | DB: 0.00028 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:47:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000694)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00024)
+Completed in 0.03776 (26 reqs/sec) | Rendering: 0.00307 (8%) | DB: 0.00069 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:47:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000254)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00021)
+Completed in 0.02077 (48 reqs/sec) | Rendering: 0.00315 (15%) | DB: 0.00025 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:47:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000267)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00022)
+Completed in 0.02125 (47 reqs/sec) | Rendering: 0.00320 (15%) | DB: 0.00027 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:47:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000259)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00018)
+Completed in 0.02048 (48 reqs/sec) | Rendering: 0.00309 (15%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:47:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000264)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00021)
+Completed in 0.02795 (35 reqs/sec) | Rendering: 0.00311 (11%) | DB: 0.00026 (0%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:48:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000397)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00028)
+Completed in 0.09268 (10 reqs/sec) | Rendering: 0.00343 (3%) | DB: 0.00040 (0%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:50:44) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000336)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00020)
+Completed in 0.02405 (41 reqs/sec) | Rendering: 0.00463 (19%) | DB: 0.00034 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:51:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000736)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00023)
+Completed in 0.03307 (30 reqs/sec) | Rendering: 0.00381 (11%) | DB: 0.00074 (2%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:51:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000273)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00020)
+Completed in 0.02087 (47 reqs/sec) | Rendering: 0.00291 (13%) | DB: 0.00027 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:51:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000667)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00048)
+Completed in 0.05137 (19 reqs/sec) | Rendering: 0.00756 (14%) | DB: 0.00067 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:52:27) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000264)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00018)
+Completed in 0.02240 (44 reqs/sec) | Rendering: 0.00447 (19%) | DB: 0.00026 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:54:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000696)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00017)
+Completed in 0.04124 (24 reqs/sec) | Rendering: 0.00482 (11%) | DB: 0.00070 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:54:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000252)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00019)
+Completed in 0.02228 (44 reqs/sec) | Rendering: 0.00388 (17%) | DB: 0.00025 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:55:21) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000297)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00019)
+Completed in 0.02132 (46 reqs/sec) | Rendering: 0.00347 (16%) | DB: 0.00030 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:57:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000277)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00019)
+Completed in 0.02635 (37 reqs/sec) | Rendering: 0.00665 (25%) | DB: 0.00028 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]
+
+
+Processing BrowserController#index (for 127.0.0.1 at 2009-02-07 21:57:29) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNmJhNjZmNzMzMDM0NDY3YmI1MWQ4NWE4NjQ4NjAw
+MWMiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--7a8b7426a366c07599ca3cc583b2ed6c76c1748f
+  Parameters: {"repo"=>"git-doc-store", "action"=>"index", "path"=>["app"], "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000291)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'git-doc-store') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00019)
+Completed in 0.02310 (43 reqs/sec) | Rendering: 0.00350 (15%) | DB: 0.00029 (1%) | 200 OK [http://localhost/browse/git-doc-store/app/]

@@ -10,6 +10,16 @@ h1#page-header
   :height 50px
   :padding 15px 0 5px 0
 
+h2
+  :font-size 1.1em
+
+h3
+  :font-size 0.9em
+  :font-weight bold
+
+#main-content-container
+  :margin 10px 0 0 10px
+  
 #toolbar-container
   :padding 3px 0 1.3em 0
   :background #e8e8e8
@@ -42,6 +52,7 @@ h1#page-header
       :padding-left 3px
       :font-family arial
       :font-size 0.8em
+      :font-weight bold
 
       a
         :text-decoration none
@@ -49,8 +60,22 @@ h1#page-header
         :font-family arial
 
       a:hover
-        :text-decoration underline
+        :color 505050
 
+  .selected
+    :background #F9F9F9 none repeat scroll 0 0
+    
+    .shadow-effect
+      :background #E3E3E3 none repeat scroll 0 0
+      :border-bottom 0.2em solid #EEEEEE
+    
+    .text
+      :font-weight bold
+      :color 505050
+      
+      a
+        :color 505050
+        
   .first
     :border-left none
     
@@ -58,6 +83,7 @@ h1#page-header
       :border-left 0.1em solid #bbbbbb
       :margin-left -6px
       :padding-left 5px
+      
   .last
     :border-right none
 
@@ -73,4 +99,12 @@ h1#page-header
 #breadcrumbs
   :float left
   :margin-right 10px
+  
+table#tree
+  :width 100%
+  
+  th
+    :text-align left
+  tr.odd
+    :background-color #ececec
 
