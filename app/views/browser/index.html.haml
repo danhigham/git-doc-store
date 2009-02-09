@@ -4,8 +4,12 @@
   %tr
     %th
       Name
-  -@current_path.contents.each do |x|
-    %tr{:class => cycle('odd','even')} 
-      %td    
-        =link_for_git_object(x)
-
+    %th
+      Blame
+  -if !@blame_tree.nil?
+    -@blame_tree.each do |k, v|
+      %tr{:class => cycle('odd','even')} 
+        %td    
+          =link_for_git_object(k)
+        %td
+          =!v.nil? ? v[0][0].message : ""

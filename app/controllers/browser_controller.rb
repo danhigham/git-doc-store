@@ -11,10 +11,13 @@ class BrowserController < ApplicationController
       git_repo = Grit::Repo.new(repo.path)
       tree = git_repo.tree
       @path = params[:path] || []
+
       @selected_path = @path.join("\/")
-      
-      @commits = git_repo.commits
+      @top_commit = git_repo.commits.first
+ 
       @current_path = tree/"#{@selected_path}" || tree
+      @blame_tree = !@top_commit.nil? ? get_blames_and_tree(git_repo, @top_commit.id, @current_path, @selected_path) : nil
+
     else
       @repo_list = Repository.all
       render :action => 'repo_list'
@@ -73,6 +76,12 @@ class BrowserController < ApplicationController
       
       redirect_to "/browse/#{repo.name}/#{path}"      
     end
+  end
+
+  def commits
+    repo = Repository.find_by_name(params[:repo])
+    git_repo = Grit::Repo.new(repo.path)
+    @commit_list = git_repo.commits
   end
 
 end

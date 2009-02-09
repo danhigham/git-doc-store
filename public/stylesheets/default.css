@@ -1,14 +1,16 @@
 * {
-  font-family: Georgia;
   margin: 0;
   padding: 0; }
+
+body {
+  font-family: Georgia; }
 
 .file-field {
   font-size: 10pt; }
 
 h1#page-header {
   height: 50px;
-  padding: 15px 0 5px 0; }
+  padding: 15px 0 5px 10px; }
 
 h2 {
   font-size: 1.1em; }
@@ -21,7 +23,7 @@ h3 {
   margin: 10px 0 0 10px; }
 
 #toolbar-container {
-  padding: 3px 0 1.3em 0;
+  padding: 3px 0 1.6em 0;
   background: #e8e8e8; }
 
 .toolbar {
@@ -48,7 +50,7 @@ h3 {
       padding-left: 3px;
       font-family: arial;
       font-size: 0.8em;
-      font-weight: bold; }
+      padding: 0.2em 0.2em 0.2em 0.2em; }
       .toolbar .button .text a {
         text-decoration: none;
         color: #000000;
@@ -70,13 +72,13 @@ h3 {
     .toolbar .first .text {
       border-left: 0.1em solid #bbbbbb;
       margin-left: -6px;
-      padding-left: 5px; }
+      padding-left: 0.5em; }
   .toolbar .last {
     border-right: none; }
     .toolbar .last .text {
       border-right: 0.1em solid #bbbbbb;
       margin-right: -6px;
-      padding-right: 5px; }
+      padding-right: 0.5em; }
 
 #tools {
   float: right;

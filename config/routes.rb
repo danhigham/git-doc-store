@@ -35,6 +35,7 @@ ActionController::Routing::Routes.draw do |map|
 
   # See how all your routes lay out with "rake routes"
 
+  map.connect 'log/:repo', :controller => 'browser', :action => 'commits'
   map.connect 'browse/:repo/*path', :controller => 'browser', :action => 'index'
   map.connect 'blob/:repo/:id', :controller => 'browser', :action => 'show_blob'
   map.connect 'upload/:repo/*path', :controller => 'browser', :action => 'upload'

@@ -34,6 +34,23 @@ module ApplicationHelper
       title=\"#{url}\" href=\"#{url}\">#{caption}</a>"
   end
 
+  def get_blames_and_tree(repo, commit_hash, tree, path)
+    blame_tree = Hash.new
+    
+    tree.contents.each { |x|
+      if x.is_a? Blob
+        req_path = path.length > 0 ? "#{path}/#{x.name}" : x.name 
+        blame_tree[x] = Blob.blame(repo, commit_hash, req_path)
+        
+      else
+        blame_tree[x] = nil
+      end 
+    }
+
+    blame_tree.sort_by { |k,v| k.name.upcase }
+    blame_tree
+  end
+
 end
 
 class ContentType
