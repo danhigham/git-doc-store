@@ -8,15 +8,16 @@ class BrowserController < ApplicationController
     repo = Repository.find_by_name(params[:repo]) if !params[:repo].nil?
     
     if !repo.nil?
-      git_repo = Grit::Repo.new(repo.path)
-      tree = git_repo.tree
+      git_repo = repo.git_repo
+      @git_tree = git_repo.tree
       @path = params[:path] || []
 
       @selected_path = @path.join("\/")
       @top_commit = git_repo.commits.first
  
-      @current_path = tree/"#{@selected_path}" || tree
-      @blame_tree = !@top_commit.nil? ? get_blames_and_tree(git_repo, @top_commit.id, @current_path, @selected_path) : nil
+      #@current_path = @git_tree/"#{@selected_path}" || tree
+
+      @blame_tree = !@top_commit.nil? ? git_repo.blame_tree(@top_commit.id, (@path.length > 0 ? @selected_path : '')).sort : nil
 
     else
       @repo_list = Repository.all

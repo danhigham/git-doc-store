@@ -1,5 +1,8 @@
 #breadcrumbs.toolbar
   -if !@path.nil?
+    %div{:class => 'button first'}
+      .shadow-effect  
+      .text root    
     -@path.each do |x|
       %div{:class => get_list_item_class(@path, x)}
         .shadow-effect  
