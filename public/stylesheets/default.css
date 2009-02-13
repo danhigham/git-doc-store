@@ -23,7 +23,7 @@ h3 {
   margin: 10px 0 0 10px; }
 
 #toolbar-container {
-  padding: 3px 0 1.6em 0;
+  padding: 3px 0 1.5em 0;
   background: #e8e8e8; }
 
 .toolbar {
@@ -49,7 +49,7 @@ h3 {
       position: relative;
       padding-left: 3px;
       font-family: arial;
-      font-size: 0.8em;
+      font-size: 0.7em;
       padding: 0.2em 0.2em 0.2em 0.2em; }
       .toolbar .button .text a {
         text-decoration: none;
@@ -72,6 +72,15 @@ h3 {
     .toolbar .first .text {
       border-left: 0.1em solid #bbbbbb;
       margin-left: -6px;
+      padding-left: 0.5em; }
+  .toolbar .lone {
+    border-right: none; }
+    .toolbar .lone .text {
+      border-left: 0.1em solid #bbbbbb;
+      border-right: 0.1em solid #bbbbbb;
+      margin-right: -6px;
+      margin-left: -6px;
+      padding-right: 0.5em;
       padding-left: 0.5em; }
   .toolbar .last {
     border-right: none; }

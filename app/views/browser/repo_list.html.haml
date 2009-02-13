@@ -1,13 +1,16 @@
-%table#admin-repo-list
-  %tr
-    %td Name
-    %td Path
-    %td Created @
-  -@repo_list.each do |r|
+-if @repo_list.empty?
+  %h3 No registered repositories
+-else
+  %table#admin-repo-list
     %tr
-      %td
-        %a{:href => "/browse/#{r.name}"} 
-          =r.name
-      %td= r.path
-      %td= r.created_at
+      %td Name
+      %td Path
+      %td Created @
+    -@repo_list.each do |r|
+      %tr
+        %td
+          %a{:href => "/browse/#{r.name}"} 
+            =r.name
+        %td= r.path
+        %td= r.created_at
 

@@ -1,15 +1,30 @@
 #breadcrumbs.toolbar
+  %div{:class => 'button first'}
+    .shadow-effect  
+    .text 
+      %a{:href => "/browser"} Browser
+
   -if !@path.nil?
+    -@path_array = @path.dclone
+    -@path_link = "/browse/#{params['repo']}"   
     %div{:class => 'button first'}
       .shadow-effect  
-      .text root    
+      .text 
+        %a{:href => @path_link} root
+   
     -@path.each do |x|
+      -@path_link << "/#{@path_array.shift}"
       %div{:class => get_list_item_class(@path, x)}
         .shadow-effect  
-        .text= x  
+        .text
+          -if x == @path.last
+            =x
+          -else
+            %a{:href => @path_link}= x
+  
 
 #action-buttons.toolbar
-  -if !@current_path.nil?
+  -if !@path.nil?
     %div{:class => "button first"}
       .shadow-effect
       .text= modal_link("Upload a file...", "Upload", "/upload/#{params[:repo]}/#{@path.join("/")}")

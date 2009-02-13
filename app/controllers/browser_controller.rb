@@ -6,7 +6,7 @@ class BrowserController < ApplicationController
 
   def index
     repo = Repository.find_by_name(params[:repo]) if !params[:repo].nil?
-    
+
     if !repo.nil?
       git_repo = repo.git_repo
       @git_tree = git_repo.tree
@@ -74,7 +74,9 @@ class BrowserController < ApplicationController
       index.add(filename, file)
 
       index.commit(params[:comment], parent_commits, nil, last_tree)
-      
+
+      repo.update_blame_table      
+
       redirect_to "/browse/#{repo.name}/#{path}"      
     end
   end

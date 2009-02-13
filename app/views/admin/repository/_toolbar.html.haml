@@ -1,5 +1,16 @@
-%ul#admin_toolbar
+#action-buttons.toolbar
+  %div{:class => "button lone"}
+    .shadow-effect
+    .text= modal_link("Add repository", "Add repository" , "/admin/repository/register")
 
-  %li Users
+#tools.toolbar
+  %div{:class => "button first"}
+    .shadow-effect
+    .text
+      %a{:href => '/admin/repository'} Users
 
-  %li Repositories
+  %div{:class => "button last"}
+    .shadow-effect
+    .text
+      %a{:href => '/admin/repository'} Repositories
+

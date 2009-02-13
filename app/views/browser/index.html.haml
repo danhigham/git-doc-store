@@ -1,4 +1,8 @@
-%h3= "Displaying items for #{params[:repo]}:#{@selected_path}"
+-if @blame_tree.nil?
+  %h3 Repository empty
+-else
+  %h3= "Displaying items for #{params[:repo]}:#{@selected_path}"
+
 
 %table#tree
   %tr
