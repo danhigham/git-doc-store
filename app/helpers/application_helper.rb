@@ -21,9 +21,8 @@ module ApplicationHelper
       response.headers["Content-Type"] = "image/png"
     elsif content_type == :GIF
       response.headers["Content-Type"] = "image/gif"
-    elsif content_type == :TXT
-      response.headers["Content-Type"] = "text/plain"
-
+    elsif [:TEXT, :RUBY, :HAML, :CSS].include? (content_type)
+      response.headers["Content-Type"] = "text/html"
     end
 
   end    
@@ -78,6 +77,10 @@ class ContentType
   ContentType.add_item :JPEG, ['jpeg', 'jpg']
   ContentType.add_item :PNG, ['png']
   ContentType.add_item :GIF, ['gif']
+  ContentType.add_item :RUBY, ['rb', 'rhtml']
+  ContentType.add_item :HAML, ['haml']
+  ContentType.add_item :CSS, ['sass', 'css']
+
 end
 
 

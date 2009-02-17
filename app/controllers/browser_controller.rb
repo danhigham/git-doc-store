@@ -1,3 +1,4 @@
+require 'uv'
 include ApplicationHelper
 
 class BrowserController < ApplicationController
@@ -29,26 +30,14 @@ class BrowserController < ApplicationController
     repo = Repository.find_by_name(params[:repo])
     git_repo = Grit::Repo.new(repo.path) 
     blob = git_repo.blob(params[:id])
-    
+        
     content_type = params[:type].to_sym
-
     set_response_type(content_type)
-    render :text => blob.data
+    
+  @markup = Uv.parse( blob.data, "xhtml", content_type.to_s.downcase, true, "iplastic").gsub(/\n/, '<br />')
   end
 
   def upload
-
-    #  Sample commit object    
-    #  {
-    #    "message"=>"hello", 
-    #    "parents"=>[{"id"=>"b10c54e24ac0c42aeec334b9b45ec220de152294"}], 
-    #    "author"=>{"name"=>"Dan Higham", "email"=>"dan.higham@gmail.com"}, 
-    #    "id"=>"a627bf47cdc654ac74e8e95eb110710e73f05328", 
-    #    "committed_date"=>"2009-02-06T06:34:05-05:00", 
-    #    "authored_date"=>"2009-02-06T06:34:05-05:00", 
-    #    "tree"=>"445e9aae50d3693b720da7025d042b10ea1ca5fe", 
-    #    "committer"=>{"name"=>"Dan Higham", "email"=>"dan.higham@gmail.com"}
-    #  }
 
     @upload_path = params[:path].length > 0 ? params[:path].join("/") : "/"
 

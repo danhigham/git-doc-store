@@ -10,14 +10,14 @@ class Repository < ActiveRecord::Base
 
   def update_blame_table
     git = Grit::Git.new(self.path)
-    git.sh("cd #{self.path}\\git-log --pretty=oneline --name-only --parents --reverse --all > #{self.path}/.git/file-index") if !File.exists?("#{self.path}/.git/file-index")
+    git.sh("cd #{self.path} && git-log --pretty=oneline --name-only --parents --reverse --all > #{self.path}/.git/file-index")
   end
 
   private
 
   def ensure_index_hook
     git = Grit::Git.new(self.path)
-    git.sh("cd #{self.path}\\git-log --pretty=oneline --name-only --parents --reverse --all > #{self.path}/.git/file-index") if !File.exists?("#{self.path}/.git/file-index")
+    git.sh("cd #{self.path} && git-log --pretty=oneline --name-only --parents --reverse --all > #{self.path}/.git/file-index") if !File.exists?("#{self.path}/.git/file-index")
 
     add_blame_hook ("#{self.path}/.git/hooks/post-receive")
     add_blame_hook ("#{self.path}/.git/hooks/post-commit")
