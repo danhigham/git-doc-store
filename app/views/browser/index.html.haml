@@ -14,6 +14,6 @@
     -@blame_tree.each do |item|
       %tr{:class => cycle('odd','even')} 
         %td    
-          =link_for_git_object @git_tree/"#{item[0]}" 
+          =link_for_git_object @git_tree/"#{item[0]}", @selected_path
         %td
           =item[1].message

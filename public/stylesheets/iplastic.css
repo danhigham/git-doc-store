@@ -37,7 +37,8 @@ pre.iplastic {
    background-color: #E8E8E8;
    color: #000000;
    font-size: 0.9em;
-   margin: 10px 0 0 50px;
+   margin: 10px 0 0 10px;
+   padding: 2px;
 }
 pre.iplastic .FrameTitle {
    font-weight: bold;

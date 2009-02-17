@@ -15,11 +15,10 @@ class BrowserController < ApplicationController
 
       @selected_path = @path.join("\/")
       @top_commit = git_repo.commits.first
- 
+
       #@current_path = @git_tree/"#{@selected_path}" || tree
 
       @blame_tree = !@top_commit.nil? ? git_repo.blame_tree(@top_commit.id, (@path.length > 0 ? @selected_path : '')).sort : nil
-
     else
       @repo_list = Repository.all
       render :action => 'repo_list'
@@ -31,6 +30,8 @@ class BrowserController < ApplicationController
     git_repo = Grit::Repo.new(repo.path) 
     blob = git_repo.blob(params[:id])
         
+    @path = params[:tree].split('/')
+
     content_type = params[:type].to_sym
     set_response_type(content_type)
     

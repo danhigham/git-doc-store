@@ -1,7 +1,7 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
 
-  def link_for_git_object(obj)
+  def link_for_git_object(obj, parent_path)
 
     if obj.class == Grit::Tree
       path = params[:path].join("/")
@@ -9,7 +9,7 @@ module ApplicationHelper
       return "<a href='/browse/#{params[:repo]}#{path}/#{obj.name}/'>#{obj.name}</a>"
     elsif obj.class == Grit::Blob
       type = ContentType.find(obj.name.scan(/\.([A-Za-z]+$)/).to_s)
-      return "<a href='/blob/#{params[:repo]}/#{obj.id}?type=#{type.to_s}'>#{obj.name}</a>"
+      return "<a href='/blob/#{params[:repo]}/#{obj.id}?tree=#{CGI.escape(parent_path)}&type=#{type.to_s}'>#{obj.name}</a>"
     end  
   end
 
@@ -21,7 +21,7 @@ module ApplicationHelper
       response.headers["Content-Type"] = "image/png"
     elsif content_type == :GIF
       response.headers["Content-Type"] = "image/gif"
-    elsif [:TEXT, :RUBY, :HAML, :CSS].include? (content_type)
+    elsif [:TEXT, :RUBY, :HAML, :CSS].include?(content_type)
       response.headers["Content-Type"] = "text/html"
     end
 

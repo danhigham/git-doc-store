@@ -44788,3 +44788,1078 @@ Rendering template within layouts/application
 Rendering browser/show_blob
 Rendered browser/_toolbar (0.00007)
 Completed in 0.49041 (2 reqs/sec) | Rendering: 0.00839 (1%) | DB: 0.00061 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/fd68576eec1d6e91795f8ea27f5c3229fde48dbe?type=CSS]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.001320)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00018)
+Completed in 0.11887 (8 reqs/sec) | Rendering: 0.00678 (5%) | DB: 0.00132 (1%) | 200 OK [http://192.168.6.129/browser]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;35;1mRepository Load (0.000708)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00036)
+Completed in 0.06603 (15 reqs/sec) | Rendering: 0.00700 (10%) | DB: 0.00071 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:22) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;36;1mRepository Load (0.000541)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00053)
+Completed in 0.05551 (18 reqs/sec) | Rendering: 0.00688 (12%) | DB: 0.00054 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.001176)[0m   [0mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00006)
+Completed in 0.02737 (36 reqs/sec) | Rendering: 0.00409 (14%) | DB: 0.00118 (4%) | 200 OK [http://192.168.6.129/browser]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:28) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;36;1mRepository Load (0.000511)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00032)
+Completed in 0.06751 (14 reqs/sec) | Rendering: 0.00724 (10%) | DB: 0.00051 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["public"]}
+  [4;35;1mRepository Load (0.000565)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00046)
+Completed in 0.06741 (14 reqs/sec) | Rendering: 0.01000 (14%) | DB: 0.00057 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/public/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["public"]}
+  [4;36;1mRepository Load (0.000611)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00046)
+Completed in 0.06538 (15 reqs/sec) | Rendering: 0.01021 (15%) | DB: 0.00061 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/public/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["config"]}
+  [4;35;1mRepository Load (0.000631)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00004)
+Completed in 0.06036 (16 reqs/sec) | Rendering: 0.00705 (11%) | DB: 0.00063 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/config/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:56) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;36;1mRepository Load (0.000497)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00034)
+Completed in 0.07485 (13 reqs/sec) | Rendering: 0.00739 (9%) | DB: 0.00050 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["public"]}
+  [4;35;1mRepository Load (0.003619)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00041)
+Completed in 0.06439 (15 reqs/sec) | Rendering: 0.01003 (15%) | DB: 0.00362 (5%) | 200 OK [http://192.168.6.129/browse/New%20Repo/public/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:20:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["public", "stylesheets"]}
+  [4;36;1mRepository Load (0.000586)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00071)
+Completed in 0.16426 (6 reqs/sec) | Rendering: 0.11463 (69%) | DB: 0.00059 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/public/stylesheets/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:21:02) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"CSS", "action"=>"show_blob", "id"=>"c16a3c8c86bc2912ffe6a2c4845673eb6d46394f", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000604)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00007)
+Completed in 0.13618 (7 reqs/sec) | Rendering: 0.00396 (2%) | DB: 0.00060 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/c16a3c8c86bc2912ffe6a2c4845673eb6d46394f?type=CSS]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:21:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"CSS", "action"=>"show_blob", "id"=>"fd68576eec1d6e91795f8ea27f5c3229fde48dbe", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000517)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00007)
+Completed in 0.18022 (5 reqs/sec) | Rendering: 0.00351 (1%) | DB: 0.00052 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/fd68576eec1d6e91795f8ea27f5c3229fde48dbe?type=CSS]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:21:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.001059)[0m   [0mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00008)
+Completed in 0.02644 (37 reqs/sec) | Rendering: 0.00406 (15%) | DB: 0.00106 (4%) | 200 OK [http://192.168.6.129/browser]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:21:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;36;1mRepository Load (0.000638)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00031)
+Completed in 0.06596 (15 reqs/sec) | Rendering: 0.00700 (10%) | DB: 0.00064 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:21:18) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;35;1mRepository Load (0.000616)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00040)
+Completed in 0.05486 (18 reqs/sec) | Rendering: 0.00598 (10%) | DB: 0.00062 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:21:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "views"]}
+  [4;36;1mRepository Load (0.000552)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00067)
+Completed in 0.05635 (17 reqs/sec) | Rendering: 0.00734 (13%) | DB: 0.00055 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/views/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:22:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "views", "browser"]}
+  [4;35;1mRepository Load (0.000629)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00083)
+Completed in 0.17118 (5 reqs/sec) | Rendering: 0.00955 (5%) | DB: 0.00063 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/views/browser/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:22:55) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"HAML", "action"=>"show_blob", "id"=>"4bb9ae4f9f3468dab61c90ddfd34d14b4610792c", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000624)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00007)
+Completed in 0.06240 (16 reqs/sec) | Rendering: 0.00329 (5%) | DB: 0.00062 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/4bb9ae4f9f3468dab61c90ddfd34d14b4610792c?type=HAML]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:22:59) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"HAML", "action"=>"show_blob", "id"=>"75c566ec912db4a51da74d8c01dec697b9d03546", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000590)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00007)
+Completed in 0.10660 (9 reqs/sec) | Rendering: 0.00368 (3%) | DB: 0.00059 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/75c566ec912db4a51da74d8c01dec697b9d03546?type=HAML]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:23:04) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"HAML", "action"=>"show_blob", "id"=>"0adf9334ffcb2707231e109dcf10534a3cb301dc", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000619)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00007)
+Completed in 0.14942 (6 reqs/sec) | Rendering: 0.00372 (2%) | DB: 0.00062 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/0adf9334ffcb2707231e109dcf10534a3cb301dc?type=HAML]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:23:52) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"HAML", "action"=>"show_blob", "id"=>"0adf9334ffcb2707231e109dcf10534a3cb301dc", "controller"=>"browser"}
+  [4;35;1mRepository Load (0.000669)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00007)
+Completed in 0.13040 (7 reqs/sec) | Rendering: 0.00368 (2%) | DB: 0.00067 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/0adf9334ffcb2707231e109dcf10534a3cb301dc?type=HAML]
+  [4;36;1mRepository Load (0.001250)[0m   [0;1mSELECT * FROM "repositories" ORDER BY repositories.id DESC LIMIT 1[0m
+  [4;35;1mRepository Load (0.001146)[0m   [0mSELECT * FROM "repositories" LIMIT 1[0m
+  [4;36;1mRepository Load (0.001324)[0m   [0;1mSELECT * FROM "repositories" LIMIT 1[0m
+  [4;35;1mRepository Load (0.001187)[0m   [0mSELECT * FROM "repositories" LIMIT 1[0m
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:33:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.000170)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00009)
+Completed in 0.03039 (32 reqs/sec) | Rendering: 0.00501 (16%) | DB: 0.00017 (0%) | 200 OK [http://192.168.6.129/browser]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:33:06) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;35;1mRepository Load (0.000582)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00033)
+Completed in 0.06844 (14 reqs/sec) | Rendering: 0.01045 (15%) | DB: 0.00058 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:33:08) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;36;1mRepository Load (0.000709)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00051)
+Completed in 0.05740 (17 reqs/sec) | Rendering: 0.00610 (10%) | DB: 0.00071 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:33:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000635)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00063)
+Completed in 0.05824 (17 reqs/sec) | Rendering: 0.00766 (13%) | DB: 0.00063 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:33:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"f6776a3519e5ef8882b978bb8e382cd4fc905215", "controller"=>"browser", "tree"=>"{parent_tree.id}"}
+  [4;36;1mRepository Load (0.000640)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00013)
+Completed in 0.11443 (8 reqs/sec) | Rendering: 0.00463 (4%) | DB: 0.00064 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/f6776a3519e5ef8882b978bb8e382cd4fc905215?tree={parent_tree.id}&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:33:34) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000674)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+
+
+ActionView::TemplateError (Called id for nil, which would mistakenly be 4 -- if you really wanted the id of nil, use object_id) on line #17 of browser/index.html.haml:
+14:     -@blame_tree.each do |item|
+15:       %tr{:class => cycle('odd','even')} 
+16:         %td    
+17:           =link_for_git_object @git_tree/"#{item[0]}", @parent_tree
+18:         %td
+19:           =item[1].message
+
+    app/helpers/application_helper.rb:12:in `link_for_git_object'
+    app/views/browser/index.html.haml:17:in `_run_plugin_47app47views47browser47index46html46haml'
+    app/views/browser/index.html.haml:14:in `each'
+    app/views/browser/index.html.haml:14:in `_run_plugin_47app47views47browser47index46html46haml'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:35:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:248:in `render_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1112:in `render_for_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:845:in `render_with_no_layout'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/layout.rb:251:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1161:in `default_render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1167:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:34:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;36;1mRepository Load (0.000618)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00046)
+Completed in 0.06060 (16 reqs/sec) | Rendering: 0.01001 (16%) | DB: 0.00062 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:34:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000776)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00059)
+Completed in 0.05726 (17 reqs/sec) | Rendering: 0.00669 (11%) | DB: 0.00078 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:34:35) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;36;1mRepository Load (0.000893)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00068)
+Completed in 0.18785 (5 reqs/sec) | Rendering: 0.00715 (3%) | DB: 0.00089 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:34:45) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000635)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00070)
+Completed in 0.06105 (16 reqs/sec) | Rendering: 0.00730 (11%) | DB: 0.00063 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+  [4;36;1mRepository Load (0.001923)[0m   [0;1mSELECT * FROM "repositories" LIMIT 1[0m
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:37:53) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;36;1mRepository Load (0.000691)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00076)
+Completed in 0.06474 (15 reqs/sec) | Rendering: 0.01108 (17%) | DB: 0.00069 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:37:57) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;35;1mRepository Load (0.000564)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00008)
+Completed in 0.46679 (2 reqs/sec) | Rendering: 0.00406 (0%) | DB: 0.00056 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:39:48) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;36;1mRepository Load (0.000721)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00094)
+Completed in 0.36193 (2 reqs/sec) | Rendering: 0.00727 (2%) | DB: 0.00072 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:40:01) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;35;1mRepository Load (0.000566)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00043)
+Completed in 0.06175 (16 reqs/sec) | Rendering: 0.00780 (12%) | DB: 0.00057 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:40:03) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;36;1mRepository Load (0.000864)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00066)
+Completed in 0.17505 (5 reqs/sec) | Rendering: 0.00754 (4%) | DB: 0.00086 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:40:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"f6776a3519e5ef8882b978bb8e382cd4fc905215", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;35;1mRepository Load (0.000683)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00069)
+Completed in 0.09987 (10 reqs/sec) | Rendering: 0.00447 (4%) | DB: 0.00068 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/f6776a3519e5ef8882b978bb8e382cd4fc905215?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:40:17) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;36;1mRepository Load (0.000777)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00056)
+Completed in 0.05863 (17 reqs/sec) | Rendering: 0.00658 (11%) | DB: 0.00078 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:40:20) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000624)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00064)
+Completed in 0.05722 (17 reqs/sec) | Rendering: 0.00663 (11%) | DB: 0.00062 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:40:23) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;36;1mRepository Load (0.000749)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00063)
+Completed in 0.47512 (2 reqs/sec) | Rendering: 0.00450 (0%) | DB: 0.00075 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:41:58) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;35;1mRepository Load (0.000606)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00068)
+Completed in 0.34051 (2 reqs/sec) | Rendering: 0.00436 (1%) | DB: 0.00061 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:42:07) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.001300)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00007)
+Completed in 0.13900 (7 reqs/sec) | Rendering: 0.00416 (2%) | DB: 0.00130 (0%) | 200 OK [http://192.168.6.129/browser]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:42:09) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;35;1mRepository Load (0.000555)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00033)
+Completed in 0.06969 (14 reqs/sec) | Rendering: 0.00744 (10%) | DB: 0.00056 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:42:11) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;36;1mRepository Load (0.000588)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00045)
+Completed in 0.05985 (16 reqs/sec) | Rendering: 0.00846 (14%) | DB: 0.00059 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:42:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "helpers"]}
+  [4;35;1mRepository Load (0.000583)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00062)
+Completed in 0.05683 (17 reqs/sec) | Rendering: 0.00667 (11%) | DB: 0.00058 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/helpers/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:42:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"baf65480977e16e6a431b802188c634d34aabca5", "controller"=>"browser", "tree"=>"app/helpers"}
+  [4;36;1mRepository Load (0.000606)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00065)
+Completed in 0.40078 (2 reqs/sec) | Rendering: 0.00429 (1%) | DB: 0.00061 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/baf65480977e16e6a431b802188c634d34aabca5?tree=app%2Fhelpers&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:54:37) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app"]}
+  [4;35;1mRepository Load (0.000762)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00041)
+Completed in 0.05740 (17 reqs/sec) | Rendering: 0.00653 (11%) | DB: 0.00076 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:54:38) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;36;1mRepository Load (0.000565)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00079)
+Completed in 0.06447 (15 reqs/sec) | Rendering: 0.00863 (13%) | DB: 0.00057 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:54:40) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;35;1mRepository Load (0.000655)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00072)
+Completed in 0.33850 (2 reqs/sec) | Rendering: 0.00426 (1%) | DB: 0.00065 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:55:41) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;36;1mRepository Load (0.000672)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00068)
+Completed in 0.33867 (2 reqs/sec) | Rendering: 0.00469 (1%) | DB: 0.00067 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:57:13) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;35;1mRepository Load (0.000577)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+ERROR: compiling _run_plugin_47app47views47browser47_toolbar46html46haml RAISED compile error
+/home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:20: syntax error, unexpected tASSOC, expecting kTHEN or ':' or '\n' or ';'
+_hamlout.push_text("    <div class='shadow-effect'></div>\n    <div class='text'>\n", false, 1);if x == @path.last && params[:action] => 'show_blob';
+                                                                                                                                        ^
+/home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:22: syntax error, unexpected kELSE, expecting kEND
+haml_temp = _hamlout.push_script(haml_temp, false, false, false, false, false);else;
+                                                                                   ^
+/home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:42: syntax error, unexpected kEND, expecting $end
+Function body: def _run_plugin_47app47views47browser47_toolbar46html46haml(local_assigns)
+toolbar = local_assigns[:toolbar]
+object = local_assigns[:object]
+toolbar_counter = local_assigns[:toolbar_counter]
+extend Haml::Helpers;_hamlout = @haml_buffer = Haml::Buffer.new(@haml_buffer, {:attr_wrapper=>"'", :format=>:xhtml, :autoclose=>["meta", "img", "link", "br", "hr", "input", "area", "param", "col", "base"], :ugly=>false, :preserve=>["textarea", "pre"]});_erbout = _hamlout.buffer;__in_erb_template = true;;
+
+
+
+
+
+_hamlout.push_text("<div class='toolbar' id='breadcrumbs'>\n  <div class='button first'>\n    <div class='shadow-effect'></div>\n    <div class='text'>\n      <a href='/browser'>Browser</a>\n    </div>\n  </div>\n", false, 1);if !@path.nil?;
+@path_array = @path.dclone;
+@path_link = "/browse/#{params['repo']}";
+
+
+
+_hamlout.push_text("  <div class='button first'>\n    <div class='shadow-effect'></div>\n    <div class='text'>\n", false, 2);_hamlout.open_tag("a", false, true, false, false, {}, false, false, nil, "root", :href => @path_link);
+
+_hamlout.push_text("    </div>\n  </div>\n", false, -2);@path.each do |x|;
+@path_link << "/#{@path_array.shift}";
+_hamlout.open_tag("div", false, false, false, false, {}, false, false, nil, nil, :class => get_list_item_class(@path, x));
+
+
+_hamlout.push_text("    <div class='shadow-effect'></div>\n    <div class='text'>\n", false, 1);if x == @path.last && params[:action] => 'show_blob';
+_hamlout.push_text("      ");haml_temp = x;
+haml_temp = _hamlout.push_script(haml_temp, false, false, false, false, false);else;
+_hamlout.open_tag("a", false, true, false, false, {}, false, false, nil, nil, :href => @path_link);haml_temp = x;
+haml_temp = _hamlout.push_script(haml_temp, nil, true, false, false, false);
+
+_hamlout.push_text("</a>\n", true);end;_hamlout.push_text("    </div>\n  </div>\n", false, -2);end;end;
+_hamlout.push_text("</div>\n<div class='toolbar' id='action-buttons'>\n");if !@path.nil?;
+
+
+_hamlout.push_text("  <div class='button first'>\n    <div class='shadow-effect'></div>\n    <div class='text'>", false, 2);haml_temp = modal_link("Upload a file...", "Upload", "/upload/#{params[:repo]}/#{@path.join("/")}");
+haml_temp = _hamlout.push_script(haml_temp, nil, true, false, false, false);
+
+
+
+_hamlout.push_text("</div>\n  </div>\n  <div class='button last'>\n    <div class='shadow-effect'></div>\n    <div class='text'>Create folder</div>\n  </div>\n", true, -1);end;
+
+
+
+_hamlout.push_text("</div>\n<div class='toolbar' id='tools'>\n  <div class='button first'>\n    <div class='shadow-effect'></div>\n    <div class='text'>\n      <a href='/admin/repository'>", false, 3);haml_temp = Admin;
+haml_temp = _hamlout.push_script(haml_temp, nil, true, false, false, false);
+_hamlout.push_text("</a>\n    </div>\n  </div>\n</div>\n", true, -3);@haml_buffer = @haml_buffer.upper;_erbout;
+end
+Backtrace: /home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:42:in `compile_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:55:in `prepare!'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partial_template.rb:15:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partials.rb:110:in `new'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partials.rb:110:in `render_partial'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:277:in `render_without_haml'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers.rb:57:in `non_haml'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render'
+/home/danhigham/Projects/git-doc-store/app/views/layouts/application.html.haml:9:in `_run_plugin_47app47views47layouts47application46html46haml'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `execute'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:35:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:22:in `render_template'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:248:in `render_file'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1161:in `default_render'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1167:in `perform_action_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+/usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/query_cache.rb:8:in `cache'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `sass_old_process'
+/usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/sass/plugin/rails.rb:19:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+/usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:76:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `synchronize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/rails.rb:74:in `process'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:159:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:158:in `process_client'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:285:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `initialize'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `new'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel.rb:268:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:282:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `each'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/configurator.rb:281:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/../lib/mongrel/command.rb:212:in `run'
+/usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+/usr/bin/mongrel_rails:19:in `load'
+/usr/bin/mongrel_rails:19
+
+
+ActionView::TemplateError (compile error
+/home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:20: syntax error, unexpected tASSOC, expecting kTHEN or ':' or '\n' or ';'
+_hamlout.push_text("    <div class='shadow-effect'></div>\n    <div class='text'>\n", false, 1);if x == @path.last && params[:action] => 'show_blob';
+                                                                                                                                        ^
+/home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:22: syntax error, unexpected kELSE, expecting kEND
+haml_temp = _hamlout.push_script(haml_temp, false, false, false, false, false);else;
+                                                                                   ^
+/home/danhigham/Projects/git-doc-store/app/views/browser/_toolbar.html.haml:42: syntax error, unexpected kEND, expecting $end) on line #20 of browser/_toolbar.html.haml:
+17:       %div{:class => get_list_item_class(@path, x)}
+18:         .shadow-effect  
+19:         .text
+20:           -if x == @path.last && params[:action] => 'show_blob'
+21:             =x
+22:           -else
+23:             %a{:href => @path_link}= x
+
+    app/views/browser/_toolbar.html.haml:42:in `compile_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:55:in `prepare!'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partial_template.rb:15:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partials.rb:110:in `new'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partials.rb:110:in `render_partial'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:277:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers.rb:57:in `non_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/layouts/application.html.haml:9:in `_run_plugin_47app47views47layouts47application46html46haml'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:35:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:248:in `render_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1161:in `default_render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1167:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:57:26) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;36;1mRepository Load (0.000674)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00069)
+Completed in 0.47026 (2 reqs/sec) | Rendering: 0.01240 (2%) | DB: 0.00067 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:58:14) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;35;1mRepository Load (0.000809)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+
+
+ActionView::TemplateError (undefined method `nul?' for "app/controllers":String) on line #20 of browser/_toolbar.html.haml:
+17:       %div{:class => get_list_item_class(@path, x)}
+18:         .shadow-effect  
+19:         .text
+20:           -if x == @path.last && params[:tree].nul?
+21:             =x
+22:           -else
+23:             %a{:href => @path_link}= x
+
+    app/views/browser/_toolbar.html.haml:20:in `_run_plugin_47app47views47browser47_toolbar46html46haml'
+    app/views/browser/_toolbar.html.haml:15:in `each'
+    app/views/browser/_toolbar.html.haml:15:in `_run_plugin_47app47views47browser47_toolbar46html46haml'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partial_template.rb:20:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:26:in `benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partial_template.rb:19:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/partials.rb:110:in `render_partial'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:277:in `render_without_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers.rb:57:in `non_haml'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/haml/helpers/action_view_mods.rb:12:in `render'
+    app/views/layouts/application.html.haml:9:in `_run_plugin_47app47views47layouts47application46html46haml'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:342:in `execute'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template_handlers/compilable.rb:29:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:35:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/template.rb:22:in `render_template'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_view/base.rb:248:in `render_file'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/layout.rb:257:in `render_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/activesupport-2.1.2/lib/active_support/core_ext/benchmark.rb:8:in `realtime'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:51:in `render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1161:in `default_render'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:1167:in `perform_action_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:579:in `call_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:572:in `perform_action_without_benchmark'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/1.8/benchmark.rb:293:in `measure'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/benchmarking.rb:68:in `perform_action_without_rescue'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/rescue.rb:201:in `perform_action_without_caching'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:13:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/connection_adapters/abstract/query_cache.rb:33:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/activerecord-2.1.2/lib/active_record/query_cache.rb:8:in `cache'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/caching/sql_cache.rb:12:in `perform_action'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `send'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:529:in `process_without_filters'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/filters.rb:568:in `process_without_session_management_support'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/session_management.rb:130:in `sass_old_process'
+    /usr/lib/ruby/gems/1.8/gems/haml-2.0.7/lib/sass/plugin/rails.rb:19:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/base.rb:389:in `process'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:149:in `handle_request'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:107:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:104:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:120:in `dispatch_cgi'
+    /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/dispatcher.rb:35:in `dispatch'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:76:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `synchronize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/rails.rb:74:in `process'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:159:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:158:in `process_client'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:285:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `initialize'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `new'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel.rb:268:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:282:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `each'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/configurator.rb:281:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:128:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/lib/mongrel/command.rb:212:in `run'
+    /usr/lib/ruby/gems/1.8/gems/mongrel-1.1.5/bin/mongrel_rails:281
+    /usr/bin/mongrel_rails:19:in `load'
+    /usr/bin/mongrel_rails:19
+
+Rendering /usr/lib/ruby/gems/1.8/gems/actionpack-2.1.2/lib/action_controller/templates/rescues/layout.erb (internal_server_error)
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:59:05) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;36;1mRepository Load (0.000561)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00077)
+Completed in 0.36851 (2 reqs/sec) | Rendering: 0.01231 (3%) | DB: 0.00056 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:59:10) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000665)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00062)
+Completed in 0.05811 (17 reqs/sec) | Rendering: 0.00695 (11%) | DB: 0.00066 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:59:12) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers", "admin"]}
+  [4;36;1mRepository Load (0.000605)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00094)
+Completed in 0.06194 (16 reqs/sec) | Rendering: 0.00804 (12%) | DB: 0.00061 (0%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers/admin/]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-17 11:59:15) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>["app", "controllers"]}
+  [4;35;1mRepository Load (0.000746)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00063)
+Completed in 0.05689 (17 reqs/sec) | Rendering: 0.00744 (13%) | DB: 0.00075 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo/app/controllers]
+
+
+Processing BrowserController#show_blob (for 192.168.6.1 at 2009-02-17 11:59:16) [GET]
+  Session ID: BAh7BzoMY3NyZl9pZCIlNzc1YTkzYWE5N2ViZjZkNjBhM2M3M2ZkOTZiMGVl
+MTUiCmZsYXNoSUM6J0FjdGlvbkNvbnRyb2xsZXI6OkZsYXNoOjpGbGFzaEhh
+c2h7AAY6CkB1c2VkewA=--4452f9a651e7fd84ad424d7585e90f71a4f9705a
+  Parameters: {"repo"=>"New Repo", "type"=>"RUBY", "action"=>"show_blob", "id"=>"9ed84769ee2621d66a9aeca7782be23cad09bbde", "controller"=>"browser", "tree"=>"app/controllers"}
+  [4;36;1mRepository Load (0.000592)[0m   [0;1mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/show_blob
+Rendered browser/_toolbar (0.00076)
+Completed in 0.43889 (2 reqs/sec) | Rendering: 0.10703 (24%) | DB: 0.00059 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/9ed84769ee2621d66a9aeca7782be23cad09bbde?tree=app%2Fcontrollers&type=RUBY]

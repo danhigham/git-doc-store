@@ -17,7 +17,7 @@
       %div{:class => get_list_item_class(@path, x)}
         .shadow-effect  
         .text
-          -if x == @path.last
+          -if x == @path.last && params[:tree].nil?
             =x
           -else
             %a{:href => @path_link}= x
