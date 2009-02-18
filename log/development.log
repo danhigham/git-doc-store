@@ -45989,3 +45989,14 @@ Rendering template within layouts/application
 Rendering browser/index
 Rendered browser/_toolbar (0.00027)
 Completed in 0.04069 (24 reqs/sec) | Rendering: 0.00298 (7%) | DB: 0.00047 (1%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-18 05:17:32) [GET]
+  Session ID: BAh7BiIKZmxhc2hJQzonQWN0aW9uQ29udHJvbGxlcjo6Rmxhc2g6OkZsYXNo
+SGFzaHsABjoKQHVzZWR7AA==--2c3e721b1d40a7b3a88d0631d52d53b13f8f6a3d
+  Parameters: {"repo"=>"New Repo", "action"=>"index", "controller"=>"browser", "path"=>[]}
+  [4;35;1mRepository Load (0.001114)[0m   [0mSELECT * FROM "repositories" WHERE ("repositories"."name" = 'New Repo') LIMIT 1[0m
+Rendering template within layouts/application
+Rendering browser/index
+Rendered browser/_toolbar (0.00028)
+Completed in 0.04535 (22 reqs/sec) | Rendering: 0.00326 (7%) | DB: 0.00111 (2%) | 200 OK [http://192.168.6.129/browse/New%20Repo]
