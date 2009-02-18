@@ -15,9 +15,7 @@ class BrowserController < ApplicationController
 
       @selected_path = @path.join("\/")
       @top_commit = git_repo.commits.first
-
-      #@current_path = @git_tree/"#{@selected_path}" || tree
-
+ 
       @blame_tree = !@top_commit.nil? ? git_repo.blame_tree(@top_commit.id, (@path.length > 0 ? @selected_path : '')).sort : nil
     else
       @repo_list = Repository.all
@@ -31,11 +29,26 @@ class BrowserController < ApplicationController
     blob = git_repo.blob(params[:id])
         
     @path = params[:tree].split('/')
+    content_type = params[:type].to_sym
 
+    if [:JPEG, :PNG, :GIF].include? content_type
+      @markup = "<img src='/browser/raw/#{blob.id}?repo=#{repo.name}&type=#{content_type}' />"
+    else
+      set_response_type(content_type)
+      @markup = Uv.parse( blob.data, "xhtml", content_type.to_s.downcase, true, "iplastic").gsub(/\n/, '<br />')
+    end
+
+  end
+
+  def raw
+    repo = Repository.find_by_name(params[:repo])
+    git_repo = Grit::Repo.new(repo.path) 
+    blob = git_repo.blob(params[:id])
+    
     content_type = params[:type].to_sym
     set_response_type(content_type)
-    
-  @markup = Uv.parse( blob.data, "xhtml", content_type.to_s.downcase, true, "iplastic").gsub(/\n/, '<br />')
+
+    render :text => blob.data
   end
 
   def upload

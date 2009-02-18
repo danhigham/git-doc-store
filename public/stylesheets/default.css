@@ -19,6 +19,19 @@ h3 {
   font-size: 0.9em;
   font-weight: bold; }
 
+table {
+  border-collapse: collapse;
+  font-size: 0.9em;
+  background-color: #e8e8e8; }
+  table th {
+    text-align: left;
+    padding: 2px;
+    font-size: 0.9em; }
+  table td {
+    padding: 2px; }
+    table td a {
+      color: #000000; }
+
 #main-content-container {
   margin: 10px 0 0 10px; }
 
@@ -98,8 +111,33 @@ h3 {
   margin-right: 10px; }
 
 table#tree {
-  width: 100%; }
+  margin-left: 10px;
+  width: 90%;
+  border: 2px solid #E8E8E8; }
   table#tree th {
-    text-align: left; }
+    background-color: #BAD6FD;
+    font-weight: bold;
+    font-size: 0.9em; }
+  table#tree th.name {
+    width: 10em; }
+  table#tree th.unreg {
+    width: 7em; }
+  table#tree th.date {
+    width: 13em; }
   table#tree tr.odd {
     background-color: #ececec; }
+
+table#admin-repo-list {
+  margin-left: 10px;
+  width: 90%;
+  border: 2px solid #E8E8E8; }
+  table#admin-repo-list th {
+    background-color: #BAD6FD;
+    font-weight: bold;
+    font-size: 0.9em; }
+  table#admin-repo-list th.name {
+    width: 10em; }
+  table#admin-repo-list th.unreg {
+    width: 7em; }
+  table#admin-repo-list th.date {
+    width: 13em; }

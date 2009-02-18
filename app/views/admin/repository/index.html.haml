@@ -3,10 +3,10 @@
 -else
   %table#admin-repo-list
     %tr
-      %td Name
-      %td Path
-      %td Created @
-      %td Unregister
+      %th.name Name
+      %th Path
+      %th.date Created @
+      %th.unreg Unregister
     -@repos.each do |r|
       %tr
         %td= r.name

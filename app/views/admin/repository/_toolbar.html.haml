@@ -1,5 +1,11 @@
 #action-buttons.toolbar
-  %div{:class => "button lone"}
+
+  %div{:class => "button first"}
+    .shadow-effect
+    .text
+      %a{:href => '/'} Browser
+
+  %div{:class => "button last"}
     .shadow-effect
     .text= modal_link("Add repository", "Add repository" , "/admin/repository/register")
 

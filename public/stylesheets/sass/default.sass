@@ -19,6 +19,22 @@ h3
   :font-size 0.9em
   :font-weight bold
 
+table
+  :border-collapse collapse
+  :font-size 0.9em
+  :background-color #e8e8e8
+
+  th
+    :text-align left
+    :padding 2px
+    :font-size 0.9em
+
+  td
+    :padding 2px
+
+    a
+      :color #000000
+
 #main-content-container
   :margin 10px 0 0 10px
   
@@ -114,10 +130,42 @@ h3
   :margin-right 10px
   
 table#tree
-  :width 100%
-  
+  :margin-left 10px
+  :width 90%
+  :border 2px solid #E8E8E8
+
   th
-    :text-align left
+    :background-color #BAD6FD
+    :font-weight bold
+    :font-size 0.9em
+  
+  th.name
+    :width 10em
+
+  th.unreg
+    :width 7em
+
+  th.date
+    :width 13em
+  
   tr.odd
     :background-color #ececec
 
+table#admin-repo-list
+  :margin-left 10px
+  :width 90%
+  :border 2px solid #E8E8E8
+
+  th
+    :background-color #BAD6FD
+    :font-weight bold
+    :font-size 0.9em
+  
+  th.name
+    :width 10em
+
+  th.unreg
+    :width 7em
+
+  th.date
+    :width 13em

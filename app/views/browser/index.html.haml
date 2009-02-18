@@ -1,19 +1,22 @@
 -if @blame_tree.nil?
   %h3 Repository empty
 -else
-  %h3= "Displaying items for #{params[:repo]}:#{@selected_path}"
 
-
-%table#tree
-  %tr
-    %th
-      Name
-    %th
-      Blame
-  -if !@blame_tree.nil?
-    -@blame_tree.each do |item|
-      %tr{:class => cycle('odd','even')} 
-        %td    
-          =link_for_git_object @git_tree/"#{item[0]}", @selected_path
-        %td
-          =item[1].message
+  %table#tree
+    %tr
+      %th.name
+        Name
+      %th
+        Commit Message
+      %th.date
+        Updated @
+        
+    -if !@blame_tree.nil?
+      -@blame_tree.each do |item|
+        %tr{:class => cycle('odd','even')} 
+          %td
+            =link_for_git_object @git_tree/"#{item[0]}", @selected_path
+          %td
+            =item[1].message
+          %td
+            =item[1].date.strftime("%Y-%m-%d %I:%M:%S")
