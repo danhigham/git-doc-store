@@ -29,7 +29,7 @@ class Repository < ActiveRecord::Base
       if File.read(file).grep(/### GitDocStore Hook ###/).empty? 
         File.open(file, "a") do |f|
           f.puts "\n### GitDocStore Hook ###\n"
-          f.puts "git-log --pretty=oneline --name-only --parents --reverse --all > file-index"
+          f.puts "git-log --pretty=oneline --name-only --parents --reverse --all > .git/file-index"
         end
 
         FileUtils.chmod 0755, file
