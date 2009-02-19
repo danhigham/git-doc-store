@@ -49122,3 +49122,13 @@ Rendering template within layouts/application
 Rendering browser/show_blob
 Rendered browser/_toolbar (0.00069)
 Completed in 0.20037 (4 reqs/sec) | Rendering: 0.00523 (2%) | DB: 0.00075 (0%) | 200 OK [http://192.168.6.129/blob/New%20Repo/d7aa3215527a8d192d03c054e1836dad9ec9a770?tree=config&type=RUBY]
+
+
+Processing BrowserController#index (for 192.168.6.1 at 2009-02-19 16:14:08) [GET]
+  Session ID: b8313cc826a7eef69a6049614c125cdc
+  Parameters: {"action"=>"index", "controller"=>"browser"}
+  [4;36;1mRepository Load (0.002661)[0m   [0;1mSELECT * FROM "repositories" [0m
+Rendering template within layouts/application
+Rendering browser/repo_list
+Rendered browser/_toolbar (0.00009)
+Completed in 0.30905 (3 reqs/sec) | Rendering: 0.18354 (59%) | DB: 0.00266 (0%) | 200 OK [http://192.168.6.129/]

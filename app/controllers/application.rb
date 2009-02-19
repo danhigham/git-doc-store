@@ -16,6 +16,4 @@ class ApplicationController < ActionController::Base
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
 
-  @@repo = Repo.new("/home/danhigham/Projects/doc-repo")
-  #@@store = GitStore.new("/home/danhigham/Projects/doc-repo")
 end
